@@ -12,41 +12,42 @@
     <div class="container bg-light" style="height: 400px; width: 300px; border:rgb(125, 167, 167) solid 5px; border-radius: 21px;margin-top: 250px;">
         <h1 style="text-align: center;font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: xx-large; font-style:bold;">CALCULATOR</h1>
         <form action="">
-        <input type="text"  class=" w-75 form-control">
+        <input id="result" type="text"  class=" w-75 form-control">
         </form>
 
         <div class="container">
             <div class="row" style="padding: 10px;">
-                <div class="col-3"><button type="button" class="btn btn-secondary">1</button></div>
-                <div class="col-3"><button type="button" class="btn btn-secondary">2</button></div>
-                <div class="col-3"><button type="button" class="btn btn-secondary">3</button></div>
-                <div class="col-3"><button type="button" class="btn btn-secondary">/</button></div>
+                <div class="col-3"><button type="button" onclick="displaydata(1)" class="btn btn-secondary">1</button></div>
+                <div class="col-3"><button type="button" onclick="displaydata(2)" class="btn btn-secondary">2</button></div>
+                <div class="col-3"><button type="button" onclick="displaydata(3)" class="btn btn-secondary">3</button></div>
+                <div class="col-3"><button type="button" onclick="displaydata('/')" class="btn btn-secondary">/</button></div>
             </div>
 
             <div class="row" style="padding: 10px;">
-                <div class="col-3"><button type="button" class="btn btn-secondary">4</button></div>
-                <div class="col-3"><button type="button" class="btn btn-secondary">5</button></div>
-                <div class="col-3"><button type="button" class="btn btn-secondary">6</button></div>
-                <div class="col-3"><button type="button" class="btn btn-secondary">*</button></div>
+                <div class="col-3"><button type="button" onclick="displaydata(4)" class="btn btn-secondary">4</button></div>
+                <div class="col-3"><button type="button" onclick="displaydata(5)" class="btn btn-secondary">5</button></div>
+                <div class="col-3"><button type="button" onclick="displaydata(6)" class="btn btn-secondary">6</button></div>
+                <div class="col-3"><button type="button" onclick="displaydata('*')" class="btn btn-secondary">*</button></div>
             </div>
             <div class="row" style="padding: 10px;">
-                <div class="col-3"><button type="button" class="btn btn-secondary">7</button></div>
-                <div class="col-3"><button type="button" class="btn btn-secondary">8</button></div>
-                <div class="col-3"><button type="button" class="btn btn-secondary">9</button></div>
-                <div class="col-3"><button type="button" class="btn btn-secondary">-</button></div>
+                <div class="col-3"><button type="button" onclick="displaydata(7)" class="btn btn-secondary">7</button></div>
+                <div class="col-3"><button type="button" onclick="displaydata(8)" class="btn btn-secondary">8</button></div>
+                <div class="col-3"><button type="button" onclick="displaydata(9)" class="btn btn-secondary">9</button></div>
+                <div class="col-3"><button type="button" onclick="displaydata('-')" class="btn btn-secondary">-</button></div>
             </div>
             <div class="row" style="padding: 10px;">
-                <div class="col-3"><button type="button" class="btn btn-secondary">0</button></div>
-                <div class="col-3"><button type="button" class="btn btn-secondary">AC</button></div>
-                <div class="col-3"><button type="button" class="btn btn-secondary">+</button></div>
-                <div class="col-3"><button type="button" class="btn btn-secondary">=</button></div>
+                <div class="col-3"><button type="button" onclick="displaydata(0)" class="btn btn-secondary">0</button></div>
+                <div class="col-3"><button type="button" onclick="emptydata()" class="btn btn-secondary">AC</button></div>
+                <div class="col-3"><button type="button" onclick="displaydata('+')" class="btn btn-secondary">+</button></div>
+                <div class="col-3"><button type="button" onclick="equal()" class="btn btn-secondary">=</button></div>
             </div>
             <div class="row" style="padding: 10px;">
-                <div class="col-6"><button type="button" class="btn btn-secondary" style="width: 111px;"><i class="fa-solid fa-delete-left"></i></i></button>
+                <div class="col-6"><button type="button" onclick="backspace()" class="btn btn-secondary" style="width: 111px;"><i class="fa-solid fa-delete-left"></i></i></button>
                 </div>
 
     
             </div>
     </div>
 </body>
+<script src="./calc.js"></script>
 </html>

@@ -1,0 +1,20 @@
+string indexing
+----------------
+
+slice(starting index,ending index)
+s.slice(0,2)
+
+local storage
+--------------
+
+storage / update
+
+localStorage.setElement()
+
+access
+
+localStorage.getElement()
+
+remove
+
+localStorage.removeElemnt()
